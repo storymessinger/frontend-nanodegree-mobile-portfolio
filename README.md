@@ -20,12 +20,12 @@ Enjoy!
 2. used image srcset for pizzeria.jpg for optimization
 3. optimized the size of pizza.jpg
 4. Inline-ed "style.css" of index.html
+5. (*NOTYET*)  Compressed the  css and js file using gzip by grunt-compress
 
 ### main.js (Getting rid of janks in rendering)
 1. FSL problem solved with Pizza-Sliders
 2. FSL problem solved related with moving pizza background
 3. 
-
 
 
 
