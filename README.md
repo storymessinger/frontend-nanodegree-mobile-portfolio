@@ -19,8 +19,11 @@ Enjoy!
 1. async-ed the google analyics
 2. used image srcset for pizzeria.jpg for optimization
 3. optimized the size of pizza.jpg
-4. Inline-ed "style.css" of index.html
-5. (*NOTYET*)  Compressed the  css and js file using gzip by grunt-compress
+4. Inline-ed "style.css" of index.html 
+5. ~~Compressed the  css and js file using gzip by grunt-compress~~
+6. Found out its not gzip but 'minifing' that should be done. Minified.
+7. 
+
 
 ### main.js (Getting rid of janks in rendering)
 1. FSL problem solved with Pizza-Sliders
