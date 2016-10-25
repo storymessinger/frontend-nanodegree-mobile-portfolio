@@ -1,40 +1,35 @@
-## Website Performance Optimization portfolio project
+# Website Performance Optimization portfolio project (ver.JD)
 
-Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+(guideline)
+A README file is included detailing all steps required to successfully run the application and outlines the optimizations that the student made in index.html and views/js/main.js for pizza.html.
 
-To get started, check out the repository and inspect the code.
+## How to run the application
+Please go to this link below
+https://storymessinger.github.io/frontend-nanodegree-mobile-portfolio/
 
-### Getting started
+To see the optimization result,
+1. Use google pagespeed tool to inspect the speed of the page
+2. use the chrome dev tools to inspect  the rendering speed :)
 
-####Part 1: Optimize PageSpeed Insights score for index.html
+Enjoy!
 
-Some useful tips to help you get started:
+## Optimizations currently done
 
-1. Check out the repository
-1. To inspect the site on your phone, you can run a local server
+### index.html (CRP optimization)
+1. async-ed the google analyics
+2. used image srcset for pizzeria.jpg for optimization
+3. optimized the size of pizza.jpg
+4. Inline-ed "style.css" of index.html
 
-  ```bash
-  $> cd /path/to/your-project-folder
-  $> python -m SimpleHTTPServer 8080
-  ```
+### main.js (Getting rid of janks in rendering)
+1. FSL problem solved with Pizza-Sliders
+2. FSL problem solved related with moving pizza background
+3. 
 
-1. Open a browser and visit localhost:8080
-1. Download and install [ngrok](https://ngrok.com/) to the top-level of your project directory to make your local server accessible remotely.
 
-  ``` bash
-  $> cd /path/to/your-project-folder
-  $> ./ngrok http 8080
-  ```
 
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
 
-Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
-####Part 2: Optimize Frames per Second in pizza.html
-
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
-
-You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
