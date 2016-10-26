@@ -501,9 +501,6 @@ function updatePositions() {
     var phase = Math.sin(document.body.scrollTop / 1250);
     for (var i = 0; i < items.length; i++) {
         items[i].style.left = items[i].basicLeft + 100 * (phase * Math.sin( i % 5 ))  + 'px';
-        
-        // tried out tranlsate method but does not seemd to work out
-//        items[i].style.transform=' translateX(items[i].basicLeft + 100 * (phase * Math.sin( i % 5 ))'  + 'px');
     }
     
     // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -529,7 +526,6 @@ document.addEventListener('DOMContentLoaded', function () {
         elem.src = "images/pizza.png";
         elem.style.height = "100px";
         elem.style.width = "73.333px";
-        elem.style.-webkit-backface-visibility: hidden;
         elem.basicLeft = (i % cols) * s;
         elem.style.top = (Math.floor(i / cols) * s) + 'px';
         console.log(elem.style.top);
