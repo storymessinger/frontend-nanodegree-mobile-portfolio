@@ -28,7 +28,13 @@ Enjoy!
 ### main.js (Getting rid of janks in rendering)
 1. FSL problem solved with Pizza-Sliders
 2. FSL problem solved related with moving pizza background
-3. 
+3. querySelector to getElementsByClassname
+
+
+### Todo
+- [ ] How to use javascript and var with css3 transform:translateX?
+-  
+
 
 
 
