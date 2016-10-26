@@ -402,28 +402,27 @@ var pizzaElementGenerator = function (i) {
 var resizePizzas = function (size) {
     window.performance.mark("mark_start_resize"); // User Timing API function
 
-    // Changes the value for the size of the pizza above the slider
-    function changeSliderLabel(size) {
-        switch (size) {
-        case "1":
-            document.querySelector("#pizzaSize").innerHTML = "Small";
-            return;
-        case "2":
-            document.querySelector("#pizzaSize").innerHTML = "Medium";
-            return;
-        case "3":
-            document.querySelector("#pizzaSize").innerHTML = "Large";
-            return;
-        default:
-            console.log("bug in changeSliderLabel");
-        }
-    }
-
-    changeSliderLabel(size);
-
     // You chage the PizzaSizes by %
     // **REFINED**
     function changePizzaSizes(size) {
+        
+        // Changes the value for the size of the pizza above the slider
+        switch (size) {
+        case "1":
+            document.getElementById("pizzaSize").innerHTML = "Small";
+            break;
+        case "2":
+            document.getElementById("pizzaSize").innerHTML = "Medium";
+            break;
+        case "3":
+            document.getElementById("pizzaSize").innerHTML = "Large";
+            break;
+        default:
+            console.log("bug in changeSliderLabel");
+        }
+        
+        
+        // Change the size of the Pizza
         switch (size) {
         case "1":
             newWidth = 25;
@@ -437,7 +436,7 @@ var resizePizzas = function (size) {
         default:
             console.log("bug in sizeSwitcher");
         }
-        var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
+        var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
 
         for (var i = 0; i < randomPizzas.length; i++) {
             randomPizzas[i].style.width = newWidth + "%";
@@ -526,7 +525,7 @@ document.addEventListener('DOMContentLoaded', function () {
         elem.basicLeft = (i % cols) * s;
         elem.style.top = (Math.floor(i / cols) * s) + 'px';
         console.log(elem.style.top);
-        document.querySelector("#movingPizzas1").appendChild(elem);
+        document.getElementById("movingPizzas1").appendChild(elem);
     }
     updatePositions();
 });
