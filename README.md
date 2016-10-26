@@ -31,9 +31,10 @@ Enjoy!
 3. querySelector to getElementsByClassname
 
 
-### Todo
-- [ ] How to use javascript and var with css3 transform:translateX?
--  
+### Considering 
+- [ ] Use javascript and var with css3 transform:translateX
+- [ ] Use backface-visibility: hidden;
+
 
 
 
